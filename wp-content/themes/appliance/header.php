@@ -9,27 +9,31 @@
 
 <link rel="profile" href=" http://gmpg.org/xfn/11" />
 
-
-
+<?php wp_enqueue_script("jquery"); ?>
 <?php wp_head()?>
+
+<script type="text/javascript"
+   src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+
+  
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home.css" type="text/css" media="screen" />
 </head>
 <body <?php body_class()?>>
-
-<div id="pagewidth" >
-
 
 <div id="header">
 <h1><a href="<?php echo site_url()?>" title="<?php bloginfo('name')?>"><?php bloginfo('name')?></a></h1>
 <h2><?php bloginfo('description')?></h2>
 </div>
 
-<div id="footermenu">
-<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'depth' => '1' ) ); ?>
-</div>
+<?php get_template_part('menu') ?>
+<!--<div id="footermenu">
+<?php //wp_nav_menu( array( 'theme_location' => 'footer-menu', 'depth' => '1' ) ); ?>
+</div>-->
 
-<div class="divider"></div>
+<!--<div class="divider"></div>-->
+<div id="pagewidth">
 
-
-<div id="wrapper" class="clearfix" > 
+<div id="wrapper" class="clearfix" >
 
 <div id="maincol" >

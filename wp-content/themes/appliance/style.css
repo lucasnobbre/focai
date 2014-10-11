@@ -27,6 +27,7 @@ body {
 #header {
 	position:relative;
 	width:1000px;
+	height:150px;
 	display:block;
 	margin:20px 0px 20px 0px;
 	padding:0px;
@@ -83,17 +84,16 @@ body {
 	font-size: 12px;
 	font-family:verdana;
 	color:#5B708E;
+	width:600px;
 } 
 #maincontent h1 {
 	margin: 0px auto 10px auto;
 	padding: 0px;
 	font-family: Arial;
-	font-size: 17px;
+	font-size: 28px;
 	font-weight: bold;
-	letter-spacing: 8px;
-	text-transform: uppercase;
 	clear: both;
-	text-align: center;
+	
 	color:#5B708E;
 } 
 #maincontent h1 a {
@@ -212,17 +212,18 @@ body {
 }
 
 .postbg {
-	background:url(img/post.jpg) top left no-repeat;
-	height:304px;
-	width:214px;
+	background-color:#FFF;
+	/*background:url(img/post.jpg) top left no-repeat;*/
+	height:270px;
+	width:260px;
 	padding: 8px 8px 3px 8px;
 	float:left;
 	overflow:hidden;
-	 margin:20px 10px 0px 10px;
+	margin:20px 10px 0px 50px;
 }
 .postimage {
 	height:120px;
-	width:214px;
+	width:270px;
 	margin:0px 0px 10px 0px;
 	display:block;
 	overflow:hidden;
@@ -243,15 +244,15 @@ div.postimage img:hover {
 }
 .postcontent  {
 	padding:0px 5px 0px 5px;
-	width:204px;
-	height:95px;
+	width:250px;
+	height:65px;
 	display:block;
 	overflow:hidden;
 	word-wrap: break-word;
 }
-.postcontent h3 {
+.postbg h3 {
 	font-family:arial;
-	font-size:14px;
+	font-size:22px;
 	color:#5B708E;
 	text-decoration:none;
 	text-transform:uppercase;
@@ -292,35 +293,24 @@ div.postimage img:hover {
 	font-family:verdana;
 	font-size:11px;
 	color:#5B708E;
-	margin:0px 5px 0px 5px;
+	margin:0px 0px 0px 0px;
 	padding:0px 0px 0px 0px;
 	font-weight:bold;
 	height:24px;
 	overflow:hidden;
 }
-.postreadmore h5 {
-	height:24px;
-	width: 204px;
+.postreadmore h5{
 	display:block;
 	margin:0px;
 	padding:0px 0px 0px 0px;
 }
 .postreadmore h5 a {
-	text-decoration:none;
-	font-weight:bold;
-	font-family:verdana;
-	font-size:11px;
-	color:#5B708E;
-	padding:5px 0px 0px 10px;
-	height:19px;
-	width: 194px;
-	display:block;
-	background:url(img/more.jpg) top left no-repeat;
 }
 .postreadmore h5 a:hover {
-	color:#333333;
-	text-decoration:none;
-	background-position:-204px 0px;
+	
+}
+.date {
+	font-size:11px;
 }
 
 .smldivider {
@@ -976,3 +966,79 @@ h3#reply-title {
 	display: block;
 }
 /* End hide from IE-mac */
+
+#searchform {
+	position:relative;
+	bottom:30px;
+	left:300px;
+	margin-bottom:-20px;
+}
+
+
+#authorarea{
+ 
+background:#f0f0f0;
+ 
+border: 1px solid #d2d2d2;
+ 
+padding: 10px;
+ 
+width:500px;
+ 
+overflow:hidden;
+ 
+color: #333;
+ 
+}
+#areaautor {
+	float:left;
+	width:350px;
+}
+ 
+#areaautor h3{
+ 
+font-size: 18px;
+color:#333;
+margin:0;
+padding-left:10px;
+float:left;
+ 
+}
+ 
+#img{
+ 
+margin:0;
+ 
+padding:10px;
+ 
+float:left;
+ 
+border: 1px solid #ddd;
+ 
+width: 120px;
+ 
+height: 130px;
+ 
+}
+ 
+#areaautor p{
+ 
+color:#333;
+ 
+margin:0;
+ 
+padding:0px 10px 10px 10px;
+ 
+}
+ 
+#areaautor p a{
+ 
+color:#333;
+ 
+}
+ 
+.autorinfo {
+ 
+padding-left:120px;
+ 
+}
