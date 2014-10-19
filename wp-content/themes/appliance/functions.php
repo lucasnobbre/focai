@@ -1,5 +1,6 @@
 <?php
 
+
 if (!is_admin())
         add_action('wp_enqueue_scripts', 'appliance_js');
 	function appliance_js() {
@@ -39,7 +40,7 @@ function appliance_menu() {
 add_action( 'init', 'appliance_menu' );
 
 function appliance_custom_excerpt_length( $length ) {
-	return 15;
+	return 30;
 }
 add_filter( 'excerpt_length', 'appliance_custom_excerpt_length', 999 );
 

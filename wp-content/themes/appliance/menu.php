@@ -7,5 +7,5 @@
                 'walker'          => new twitter_bootstrap_nav_walker
                 ));
                 ?>
-<?php get_search_form(); ?> 
+<?php// get_search_form(); ?> 
 </ul>

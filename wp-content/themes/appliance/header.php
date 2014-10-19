@@ -22,16 +22,14 @@
 <body <?php body_class()?>>
 
 <div id="header">
-<h1><a href="<?php echo site_url()?>" title="<?php bloginfo('name')?>"><?php bloginfo('name')?></a></h1>
-<h2><?php bloginfo('description')?></h2>
-</div>
-
 <?php get_template_part('menu') ?>
+</div>
 <!--<div id="footermenu">
 <?php //wp_nav_menu( array( 'theme_location' => 'footer-menu', 'depth' => '1' ) ); ?>
 </div>-->
 
 <!--<div class="divider"></div>-->
+<div id="all">
 <div id="pagewidth">
 
 <div id="wrapper" class="clearfix" >

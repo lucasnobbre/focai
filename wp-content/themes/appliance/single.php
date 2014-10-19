@@ -1,12 +1,13 @@
+
 <?php get_header(); ?>
-	<div id="maincontent">
+	<div id="maincontent">			
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //The Loop?>
 		<div <?php post_class()?>>
 			<h1><?php the_title()?></h1>
 			<span class="date"><?php echo get_the_date(); ?></span> | <a href="<?php echo site_url()?>/?cat=<?php $category = get_the_category(); echo $category[0]->term_id;?>"><?php $category = get_the_category(); echo $category[0]->cat_name;?></a></a>
 			<hr>
 			
-			
+
 <?php the_content()?>
 			
 			<div class="postfooter">
@@ -16,6 +17,7 @@
 			
 		
 		</div>
+</section>
 		<div id="authorarea">
 <div id="img">
 <?php if (function_exists('get_avatar')) { echo get_avatar( get_the_author_email(), '100' ); }?>
